@@ -1,7 +1,7 @@
 app.run(['$rootScope','$state',function($rootScope,$state) {
   // console.log($state);
   console.log($state);
-}]).config(['$stateProvider','$urlRouterProvider', '$httpProvider',function($stateProvider,$urlRouterProvider,$httpProvider){
+}]).config(['$stateProvider','$urlRouterProvider', '$httpProvider' ,'JQ_CONFIG',function($stateProvider,$urlRouterProvider,$httpProvider,JQ_CONFIG){
 
   $urlRouterProvider.otherwise('/app');
 
@@ -9,6 +9,11 @@ app.run(['$rootScope','$state',function($rootScope,$state) {
     url: '/app',
     template: 'app.html'
   });
+
+
+  function load(res,callBack){
+
+  }
 
 
 }]);
